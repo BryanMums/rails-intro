@@ -2,7 +2,7 @@
 lock "3.8.0"
 
 set :application, "rails-intro"
-set :repo_url, "git@github.com:BryanMums/rails-intro.git"
+set :repo_url, "https://github.com/BryanMums/rails-intro.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -41,7 +41,7 @@ namespace :deploy do
 end
 
 # source the environment variable
-prefix = "set -a; . ~/.envifle; set +a;"
+prefix = "set -a; . ~/.envfile; set +a;"
 [:bundle, :rake, :rails].each do |cmd|
-  SSHKit.config.commande_map.prefix[cmd].push(prefix)
+  SSHKit.config.command_map.prefix[cmd].push(prefix)
 end
