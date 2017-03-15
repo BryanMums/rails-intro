@@ -56,6 +56,7 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
+    ffi (1.9.18-x86-mingw32)
     font-awesome-rails (4.7.0.1)
       railties (>= 3.2, < 5.1)
     globalid (0.3.7)
@@ -95,6 +96,8 @@ GEM
     nio4r (2.0.0)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
+    nokogiri (1.7.0.1-x86-mingw32)
+      mini_portile2 (~> 2.1.0)
     paperclip (5.1.0)
       activemodel (>= 4.2.0)
       activesupport (>= 4.2.0)
@@ -102,6 +105,7 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
     pg (0.20.0)
+    pg (0.20.0-x86-mingw32)
     puma (3.8.2)
     rack (2.0.1)
     rack-pjax (1.0.0)
@@ -182,6 +186,8 @@ GEM
     turbolinks-source (5.0.0)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2017.1)
+      tzinfo (>= 1.0.0)
     uglifier (3.1.7)
       execjs (>= 0.3.0, < 3)
     web-console (3.4.0)
@@ -195,6 +201,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   byebug
@@ -217,4 +224,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.14.5
+   1.14.6
