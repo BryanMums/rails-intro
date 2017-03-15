@@ -34,7 +34,7 @@ append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/syst
 namespace :deploy do
   after :finished, :restart_puma do
     on roles(:web) do
-      execute :sudo, 'service puma=bryan restart'
+      execute :sudo, 'service puma-bryan restart'
       execute :sudo, 'service nginx reload'
     end
   end
